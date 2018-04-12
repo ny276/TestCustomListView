@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 ListItem li = (ListItem) adapterView.getItemAtPosition(i);
-                String title = li.getTitle();
+                String title = li.getExplain();
                 Toast.makeText(MainActivity.this, title, Toast.LENGTH_SHORT).show();
             }
         });
